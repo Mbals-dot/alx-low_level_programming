@@ -1,22 +1,25 @@
 #include "main.h"
 
 /**
-  * reverse_array - The main faunction
+  * _strcmp - The main function
   *
-  * @a: Function parameter
+  * @s1: Function parameter
   *
-  * @n: Function parameter
+  * @s2: Function parameter
   *
-  * Return: Always 0
+  * Return: s1, s2
   */
-void reverse_array(int *a, int n)
+int _strcmp(char *s1, char *s2)
 {
-	int k, r;
+int k = 0;
 
-	for (k = 0; k < n--; k++)
+while (s1[k] != '\0' && s2[k] != '\0')
+{
+	if (s1[k] != s2[k])
 	{
-	r = a[k];
-	a[k] = a[n];
-	a[n] = r;
+	return (s1[k] - s2[k]);
 	}
+	k++;
+	}
+	return (0);
 }
