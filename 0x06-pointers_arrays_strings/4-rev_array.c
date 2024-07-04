@@ -1,22 +1,22 @@
 #include "main.h"
+
 /**
- * string_toupper - main function
- *
- * @n: String input
- *
- * Return: dest
- */
-
-char *string_toupper(char *n)
+  * reverse_array - The main faunction
+  *
+  * @a: Function parameter
+  *
+  * @n: Function parameter
+  *
+  * Return: Always 0
+  */
+void reverse_array(int *a, int n)
 {
-	int i;
+	int k, r;
 
-	i = 0;
-	while (n[i] != '\0')
+	for (k = 0; k < n--; k++)
 	{
-	if (n[i] >= 'a' && n[i] <= 'z')
-	n[i] = n[i] - 32;
-	i++;
+	r = a[k];
+	a[k] = a[n];
+	a[n] = r;
 	}
-return (n);
 }
