@@ -1,30 +1,28 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
- * rot13 - main function
- *
- * @s: String poiner
- *
- * Return: String function
+  *leet - main function
+  *
+  * @n: Function parameter
+  *
+  *Return: value of n
  */
 
-char *rot13(char *s)
+char *leet(char *n)
 {
 	int k, r;
-	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char s1[] = "aAeEoOtTlL";
+	char s2[] = "4433007711";
 
-	for (k = 0; s[k] != '\0'; k++)
+	for (k = 0; n[k] != '\0'; k++)
 	{
-	for (r = 0; r < 52; r++)
+	for (r = 0; r < 10; r++)
 	{
-	if (s[k] == data1[r])
+	if (n[k] == s1[r])
 	{
-	s[k] = datarot[r];
-	break;
+	n[k] = s2[r];
 	}
 	}
 	}
-	return (s);
+	return (n);
 }
