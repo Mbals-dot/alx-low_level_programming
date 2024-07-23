@@ -13,8 +13,7 @@
     */
 
 
-struct dog
-
+   struct dog
 {
 char *name;
 float age;
@@ -36,3 +35,4 @@ void free_dog(dog_t *d);
 
 
 #endif
+
